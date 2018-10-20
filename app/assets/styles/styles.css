@@ -7,5 +7,10 @@
 @import "base/_mixins";
 
 /*Modules*/
-@import "modules/_headline";
 @import "modules/_large-hero";
+@import "modules/_page-section";
+@import "modules/_site-footer";
+@import "modules/_site-header";
+@import "modules/_site-nav";
+@import "modules/_site-title";
+@import "modules/_wrapper";

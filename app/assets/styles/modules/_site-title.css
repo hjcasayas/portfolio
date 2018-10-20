@@ -1,0 +1,15 @@
+.site-title{
+	display: inline-block;
+	margin: 0;
+	float: left;
+
+	a {
+		&:link,
+		&:visited {
+			text-decoration: none;
+			color: $mainYellow;
+			font-weight: 300;
+		}
+	}
+
+}

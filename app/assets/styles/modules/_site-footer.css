@@ -1,0 +1,9 @@
+.site-footer {
+	background-color: $greyLight;
+	padding: 1.2rem 0;
+
+	&__text {
+		text-align: center;
+		margin: 0;
+	}
+}
