@@ -9,6 +9,8 @@
 /*Modules*/
 @import "modules/_large-hero";
 @import "modules/_page-section";
+@import "modules/_projects";
+@import "modules/_row";
 @import "modules/_site-footer";
 @import "modules/_site-header";
 @import "modules/_site-nav";
