@@ -5,23 +5,42 @@
 	}
 
 	li {
-		display: block;
-		float: left;
 		list-style: none;
 	}
 
 	a {
 		&:link,
 		&:visited {
-			padding: 4px 8px;
 			color: $mainYellow;
 			text-decoration: none;
+		}
+
+		&:hover {
+			border-bottom: 2em solid $mainYellow;
 		}
 	}
 
 	&--main {
-		padding-top: .8rem;
-		padding-right: 4rem;
-		float: right;
+		display: none;
+		@mixin atMedium {
+			display: block;
+			padding-top: .8rem;
+			padding-right: 4rem;
+			float: right;
+
+			li {
+				display: block;
+				float: left;
+			}
+
+			a {
+				&:link,
+				&:visited {
+					padding: 4px 8px;
+				}
+			}
+
+
+		}
 	}
 }
