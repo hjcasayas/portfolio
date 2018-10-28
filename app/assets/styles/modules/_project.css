@@ -1,0 +1,65 @@
+.project {
+
+	position: relative;
+	@mixin atMedium {
+		&:hover {
+			.project__view {
+				top: 50%;
+				transform: translate(-50%, -50%);
+				opacity: 1;
+				z-index: 11;
+			}
+
+			.project__title {
+				opacity: 0;
+			}
+		}
+	}
+
+	&__title {
+		font-size: 3rem;
+		font-weight: 300;
+		text-align: center;
+		position: absolute;
+		top: 15%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+		transition: all .3s ease-out;
+
+		@mixin atMedium {
+			font-size: 2rem;
+			top: 30%;		
+		}
+
+	}
+
+	&__view {
+		&:link, &:visited {
+			opacity: 1;
+			text-decoration: none;
+			display: inline-block;
+			padding: 4px 40px;
+			border-radius: 12px;
+			text-align: center;
+			color: $greyDark;
+			background-color: $mainYellow;
+			position: absolute;
+			top: 75%;
+			left: 50%;
+			transform: translateX(-50%);
+			transition: all .3s ease-out;
+			z-index: 20;
+
+			@mixin atMedium {
+				opacity: 0;
+				top: 100%;
+			}
+		}
+	}
+
+	&__image {
+		opacity: 0.4;
+	}
+
+}
