@@ -442,6 +442,10 @@ img {
 			.project:hover .project__title {
 				opacity: 0;
 			}
+	
+			.project:hover .project__image {
+				opacity: 1;
+			}
 	}
 .project__title {
 		font-size: 3rem;
@@ -488,8 +492,15 @@ img {
 				top: 100%
 		}
 	}
+.project__view--in-progress:link, .project__view--in-progress:visited {
+				color: #FF0000;
+				opacity: 0.85;
+				padding: 4px 12px;
+			}
 .project__image {
 		opacity: 0.4;
+		-webkit-transition: opacity 0.3 ease-out;
+		transition: opacity 0.3 ease-out;
 	}
 .row::after {
 		content: "";

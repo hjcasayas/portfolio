@@ -2,6 +2,7 @@
 
 	position: relative;
 	@mixin atMedium {
+
 		&:hover {
 			.project__view {
 				top: 50%;
@@ -12,6 +13,10 @@
 
 			.project__title {
 				opacity: 0;
+			}
+	
+			.project__image {
+				opacity: 1;
 			}
 		}
 	}
@@ -56,10 +61,19 @@
 				top: 100%;
 			}
 		}
+
+		&--in-progress {
+			&:link, &:visited {
+				color: $red;
+				opacity: 0.85;
+				padding: 4px 12px;
+			}
+		}
 	}
 
 	&__image {
 		opacity: 0.4;
+		transition: opacity 0.3 ease-out;
 	}
 
 }
