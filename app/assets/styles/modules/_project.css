@@ -54,7 +54,7 @@
 			left: 50%;
 			transform: translateX(-50%);
 			transition: all .3s ease-out;
-			z-index: 20;
+			z-index: 11;
 
 			@mixin atMedium {
 				opacity: 0;
