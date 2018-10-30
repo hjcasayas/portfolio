@@ -484,7 +484,7 @@ img {
 			        transform: translateX(-50%);
 			-webkit-transition: all .3s ease-out;
 			transition: all .3s ease-out;
-			z-index: 20;
+			z-index: 11;
 		}
 @media (min-width: 800px) {
 .project__view:link, .project__view:visited {
