@@ -8,38 +8,38 @@
 		list-style: none;
 	}
 
-	a {
-		&:link,
-		&:visited {
-			color: $mainYellow;
-			text-decoration: none;
-		}
-
-		&:hover {
-			border-bottom: 2em solid $mainYellow;
-		}
-	}
-
-	&--main {
+	&__main {
 		display: none;
+
 		@mixin atMedium {
 			display: block;
-			padding-top: .8rem;
-			padding-right: 4rem;
 			float: right;
+			padding: 1rem 0;
 
 			li {
 				display: block;
-				float: left;
+				float: right;
+				margin-right: .5rem;
 			}
 
-			a {
+			&-link {
 				&:link,
 				&:visited {
-					padding: 4px 8px;
+					padding: 4px .5rem;
+					color: $mainYellow;
+				}
+
+				&:hover {
+					color: $greyDark;
 				}
 			}
-
+			
+			&-btn {
+					padding: 1rem;
+					background-color: $mainYellow;
+					color: $greyLight;
+					border-radius: 0.625rem;
+			}
 
 		}
 	}

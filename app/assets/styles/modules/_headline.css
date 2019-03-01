@@ -1,0 +1,9 @@
+.headline {
+  &--my-projects {
+    text-align: center;
+    padding: 1.875rem auto;
+    font-size: 1.875rem;
+    font-weight: 300;
+    font-style: italic;
+  }
+}

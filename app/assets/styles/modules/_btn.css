@@ -1,0 +1,17 @@
+.btn {
+  &:link,
+  &:visited {
+    opacity: 0.85;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    opacity: 1;
+    color: $greyDark;
+    transform: scale(1.2);
+  }
+  
+  &:active {
+    transform: scale(1.1);
+  }
+}

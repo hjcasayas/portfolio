@@ -7,6 +7,8 @@
 @import "base/_mixins";
 
 /*Modules*/
+@import "modules/_btn";
+@import "modules/_headline";
 @import "modules/_large-hero";
 @import "modules/_page-section";
 @import "modules/_project";

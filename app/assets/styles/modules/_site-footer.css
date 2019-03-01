@@ -1,6 +1,11 @@
 .site-footer {
 	background-color: $greyLight;
 	padding: 1.2rem 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
 
 	&__text {
 		text-align: center;
