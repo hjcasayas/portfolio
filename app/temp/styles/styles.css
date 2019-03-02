@@ -379,18 +379,19 @@ a {
 .btn:link,
   .btn:visited {
     opacity: 0.85;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
   }
 .btn:hover {
-    opacity: 1;
+    opacity: .98;
     color: #373737;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
 .btn:active {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    opacity: 1;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
   }
 .headline {
   
@@ -440,6 +441,10 @@ a {
 	}
 .large-hero__text {
 		margin-bottom: 4.375rem;
+		-webkit-backface-visibility: hidden;
+		        backface-visibility: hidden;
+		-webkit-transform: translateZ(0) scale(1, 1);
+		        transform: translateZ(0) scale(1, 1);
 	}
 .large-hero__title {
 		font-size: 1.5rem;
@@ -469,14 +474,10 @@ a {
 		border-radius: 10px;
 		margin-right: .2rem;
 		font-size: 1.25rem;
-		-webkit-transition: opacity .3s;
-		transition: opacity .3s;
-		opacity: .85;
 	}
 .large-hero__btn:hover {
 			background-color: #C0B283;
 			color: #373737;
-			opacity: 1;
 		}
 .large-hero__btn--explore	 {
 			background-color: #F4F4F4;

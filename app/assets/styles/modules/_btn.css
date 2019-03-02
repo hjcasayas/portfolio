@@ -2,16 +2,17 @@
   &:link,
   &:visited {
     opacity: 0.85;
-    transition: all 0.3s;
+    transition: opacity .3s;
   }
 
   &:hover {
-    opacity: 1;
+    opacity: .98;
     color: $greyDark;
-    transform: scale(1.2);
+    transform: translateY(-2px);
   }
   
   &:active {
-    transform: scale(1.1);
+    opacity: 1;
+    transform: translateY(-1px);
   }
 }
