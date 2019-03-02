@@ -1,7 +1,7 @@
 .site-footer {
 	background-color: $greyLight;
 	padding: 1.2rem 0;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	right: 0;
 	left: 0;

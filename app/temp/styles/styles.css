@@ -393,8 +393,7 @@ a {
             transform: scale(1.1);
   }
 .headline {
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
+  
   margin: 0;
 }
 .headline--my-projects {
@@ -488,7 +487,7 @@ a {
 			color: #F4F4F4;
 		}
 .page-section {
-	padding: 1.3rem 0;
+	padding: 0 0 1.875rem 0;
 }
 .project {
 
@@ -572,22 +571,16 @@ a {
 		clear: both;
 		display: table;
 	}
-/*	&--gutters {
-		margin-right: -$gutter;
-	}*/
-.row__3 {
-		margin-bottom: 1rem;
-	}
 .row__3:last-child {
 			margin-bottom: 0;
 		}
 @media (min-width: 800px) {
 		.row--gutters > div {
-			margin-right: 65px;
+			margin-right: 1.875rem;
 		}
 
 		.row__3 {
-			width: calc((100% - (3 * 65px)) / 4);
+			width: calc((100% - (2 * 1.875rem)) / 3);
 			float: left;
 			margin-bottom: 0;
 		}
@@ -599,7 +592,7 @@ a {
 .site-footer {
 	background-color: #F4F4F4;
 	padding: 1.2rem 0;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	right: 0;
 	left: 0;
@@ -737,6 +730,11 @@ a {
 .site-nav ul {
 		margin: 0;
 		padding: 0;
+	}
+@media (min-width: 800px) {
+.site-nav ul {
+			margin-right: -.5rem
+	}
 	}
 .site-nav li {
 		list-style: none;
